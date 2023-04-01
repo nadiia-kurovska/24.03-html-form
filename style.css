@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
+:root{
+    --main-green: rgb(18, 145, 77);
+}
+
 *{
     box-sizing: border-box;
 }
@@ -46,16 +50,26 @@
 }
 
 .input-box .btn{
-    background-color: green;
+    background-color: var(--main-green);
     color: white;
     font-weight: 900;
     border-radius: 5px;
     font-size: 1.2rem;
 }
 
+.input-box{
+    display: flex;
+    padding-left: 0;
+    justify-content: flex-start;
+}
+.accept{
+    flex-shrink: 8;
+    padding-left: 0;
+}
+
 .regform-link{
     text-decoration: none;
-    color: #367754;
+    color: var(--main-green);
 }
 
 .regform-link:hover{
@@ -68,7 +82,7 @@
     content: '';
     width: 80px;
     height: 2px;
-    background-color: #367754;
+    background-color: var(--main-green);
     position: absolute;
 }
 
@@ -80,4 +94,13 @@
 .title::before{
     top: 15px;
     right: 130px;
+}
+
+.input:hover:not(.accept){
+    box-shadow: rgba(18, 145, 77, 0.4) 5px 5px, rgba(18, 145, 77, 0.3) 10px 10px, rgba(18, 145, 77, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.input:focus:not(.accept){
+    font-size: 1.3rem;
+    color: var(--main-green);
 }
