@@ -33,6 +33,7 @@
     padding: 10px;
     margin: 10px 0;
     width: 100%;
+    border: 1px solid #c8c9ca;
 }
 
 .title{
@@ -52,6 +53,7 @@
 .input-box .btn{
     background-color: var(--main-green);
     color: white;
+    border: none;
     font-weight: 900;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -64,7 +66,7 @@
 }
 .accept{
     flex-shrink: 8;
-    padding-left: 0;
+    margin: 5px;
 }
 
 .regform-link{
